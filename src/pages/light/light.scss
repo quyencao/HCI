@@ -1,0 +1,13 @@
+page-light {
+    .light {
+        margin-top: 80px;
+
+        ion-col {
+            padding-left: 25px;
+        }
+    }
+
+    .scroll-content, ion-grid {
+        padding-left: 0 !important;
+    }
+}

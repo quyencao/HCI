@@ -1,0 +1,17 @@
+page-airconditioner {
+    ion-label {
+        font-size: 1.5em;
+    }
+
+    ion-label.temp {
+        font-size: 1.8em;
+    }
+
+    ion-range {
+        font-size: 23px;
+    }
+
+    .scroll-content, ion-grid {
+        padding-left: 0 !important;
+    }
+}
