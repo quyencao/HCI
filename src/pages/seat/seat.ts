@@ -23,6 +23,7 @@ export class Seat {
   }
 
   ionViewDidLoad() {
+    this.rotate(0);
     console.log('ionViewDidLoad Seat');
   }
 
