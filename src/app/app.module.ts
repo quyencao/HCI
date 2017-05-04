@@ -9,6 +9,11 @@ import { MenuPage } from '../pages/menu/menu';
 import { TrunkPage } from '../pages/trunk/trunk';
 import { AirconditionerPage } from '../pages/airconditioner/airconditioner';
 import { Light } from '../pages/light/light';
+import { Sideviewmirror } from '../pages/sideviewmirror/sideviewmirror';
+import { Lock } from '../pages/lock/lock';
+import { Phone } from '../pages/phone/phone';
+import { Seats } from '../pages/seats/seats';
+import { Seat } from '../pages/seat/seat';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,7 +26,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MenuPage,
     TrunkPage,
     AirconditionerPage,
-    Light
+    Light,
+    Sideviewmirror,
+    Lock,
+    Phone,
+    Seats,
+    Seat
   ],
   imports: [
     BrowserModule,
@@ -35,7 +45,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MenuPage,
     TrunkPage,
     AirconditionerPage,
-    Light
+    Light,
+    Sideviewmirror,
+    Lock,
+    Phone,
+    Seats,
+    Seat
   ],
   providers: [
     StatusBar,

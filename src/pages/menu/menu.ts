@@ -3,6 +3,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TrunkPage } from '../trunk/trunk';
 import { AirconditionerPage } from '../airconditioner/airconditioner';
 import { Light } from '../light/light';
+import { Sideviewmirror } from '../sideviewmirror/sideviewmirror';
+import { Lock } from '../lock/lock';
+import { Phone } from '../phone/phone';
+import { Seats } from '../seats/seats';
 
 /**
  * Generated class for the Menu page.
@@ -20,7 +24,11 @@ export class MenuPage {
   pages:any[] = [
     TrunkPage,
     AirconditionerPage,
-    Light
+    Light,
+    Sideviewmirror,
+    Lock,
+    Phone,
+    Seats
   ]
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
