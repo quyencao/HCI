@@ -17,17 +17,17 @@
    <ion-grid>
       <ion-row>
         <ion-col col-sm-4 offset-2 style="margin-top: 2em;">
-          <img src="assets/icon/seat.png" style="width: 70%"/>
+          <img id="seat" src="assets/icon/seat.png" style="width: 60%"/>
         </ion-col>
       </ion-row>
       <ion-row style="margin-top: 2em; padding-left: 20px;">
         <ion-col col-sm-6>
-          <button ion-button clear style="padding: 10px" (click)="turnon()">
+          <button ion-button clear style="padding: 10px" (click)="rotateLeft()">
             <img src="assets/icon/back-arrow-circular-symbol.png" alt="">
           </button>
         </ion-col>
         <ion-col col-sm-6>
-          <button ion-button clear style="padding: 10px" (click)="turnoff()">
+          <button ion-button clear style="padding: 10px" (click)="rotateRight()">
             <img src="assets/icon/right-arrow-circular-button.png" alt="">
           </button>
         </ion-col>

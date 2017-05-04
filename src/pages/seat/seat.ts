@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 
 /**
  * Generated class for the Seat page.
@@ -15,12 +15,44 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class Seat {
 
   step: number = 30;
+  totalDegree: number = 0;
+  toast: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private toastCtrl: ToastController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Seat');
   }
 
+  rotate(degree) {
+    document.getElementById("seat").style.transform = "rotate(" + degree + "deg)";
+  }
+
+  rotateRight() {
+     if(this.totalDegree > 30) {
+      this.makeToast('Ghế quá nghiêng về phía sau');
+      return;
+    }
+    this.totalDegree += this.step;
+    this.rotate(this.totalDegree);
+  }
+
+  rotateLeft() {
+    if(this.totalDegree < -30) {
+      this.makeToast('Ghế quá nghiêng về phía trước');
+      return;
+    }
+    this.totalDegree -= this.step;
+    this.rotate(this.totalDegree);
+  }
+
+  makeToast(message) {
+      this.toast = this.toastCtrl.create({
+        message,
+        duration: 1400,
+        position: 'bottom'
+      });
+      this.toast.present();
+  }
 }
