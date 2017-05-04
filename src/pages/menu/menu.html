@@ -15,55 +15,64 @@
 
 <ion-content padding>
     <ion-grid>
-      <ion-row padding>
+      <ion-row style="padding: 0 16px;">
         <ion-col col-sm-4>
-          <button ion-button color="secondary" (click)="openPage(6)">
+          <button ion-button color="secondary" (click)="openPage(6)" id="seat">
             <img src="assets/icon/car-seat.png"/>
           </button>
+          <ion-label>Nâng ghế</ion-label>
         </ion-col>
         <ion-col col-sm-4>
           <button ion-button color="secondary" (click)="openPage(8)">
             <img src="assets/icon/movie-symbol-of-video-camera.png"/>
           </button>
+          <ion-label>Camera</ion-label>
         </ion-col>
         <ion-col col-sm-4>
           <button ion-button color="secondary" (click)="openPage(4)">
             <img src="assets/icon/lock.png"/>
           </button>
+          <ion-label>Khóa cửa xe</ion-label>
         </ion-col>
       </ion-row>
-       <ion-row padding>
+       <ion-row style="padding: 0 16px;">
         <ion-col col-sm-4>
           <button ion-button color="secondary" (click)="openPage(7)">
             <img src="assets/icon/window.png"/>
           </button>
+          <ion-label>Đóng cửa</ion-label>
         </ion-col>
         <ion-col col-sm-4>
           <button ion-button color="secondary" (click)="openPage(3)">
             <img src="assets/icon/rearview-mirror.png"/>
           </button>
+          <ion-label>Gương</ion-label>
         </ion-col>
         <ion-col col-sm-4>
           <button ion-button color="secondary" (click)="openPage(0)">
             <img src="assets/icon/trunk.png"/>
           </button>
+          <ion-label>Cốp</ion-label>
         </ion-col>
       </ion-row>
-      <ion-row padding>
+      <ion-row style="padding: 0 16px;">
         <ion-col col-sm-4>
           <button ion-button color="secondary" (click)="openPage(2)">
             <img src="assets/icon/car-lights.png"/>
           </button>
+          <ion-label>Đèn</ion-label>
         </ion-col>
         <ion-col col-sm-4>
           <button ion-button color="secondary" (click)="openPage(5)">
             <img src="assets/icon/telephone.png"/>
           </button>
+          <ion-label>Loa</ion-label>
         </ion-col>
         <ion-col col-sm-4>
           <button ion-button color="secondary" (click)="openPage(1)">
             <img src="assets/icon/fan.png"/>
           </button>
+          <ion-label>Điều hòa</ion-label>
         </ion-col>
       </ion-row>
     </ion-grid>
