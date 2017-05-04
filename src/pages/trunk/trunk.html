@@ -13,7 +13,7 @@
 </ion-header>-->
 
 
-<ion-content padding>
+<ion-content padding style="position: relative;">
     <ion-grid>
        <ion-row>
          <ion-col col-sm-10 offset-1>
@@ -24,4 +24,5 @@
          <ion-toggle (ionChange)="notify($event)"></ion-toggle>
        </ion-row>
     </ion-grid>
+     <button ion-button color="dark" style="position: absolute; bottom: 8%; left: 5%;" (click)="back()">Back</button>
 </ion-content>

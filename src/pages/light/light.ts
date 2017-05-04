@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
+import { MenuPage } from "../menu/menu";
 
 /**
  * Generated class for the Light page.
@@ -65,4 +66,8 @@ export class Light {
       this.light = this.lightImgSrcs[0];
       this.makeToast("Đèn pha đã tắt");
    }
+
+   back() {
+    this.navCtrl.setRoot(MenuPage);
+  }
 }

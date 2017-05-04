@@ -7,6 +7,8 @@ import { Sideviewmirror } from '../sideviewmirror/sideviewmirror';
 import { Lock } from '../lock/lock';
 import { Phone } from '../phone/phone';
 import { Seats } from '../seats/seats';
+import { Doors } from '../doors/doors';
+import { Cameras } from '../cameras/cameras';
 
 /**
  * Generated class for the Menu page.
@@ -28,7 +30,9 @@ export class MenuPage {
     Sideviewmirror,
     Lock,
     Phone,
-    Seats
+    Seats,
+    Doors,
+    Cameras
   ]
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {

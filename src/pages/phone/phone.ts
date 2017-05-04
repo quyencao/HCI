@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
+import { MenuPage } from "../menu/menu";
 
 /**
  * Generated class for the Phone page.
@@ -48,5 +49,9 @@ export class Phone {
     this.imgSrc = this.imgSrcs[0];
     this.makeToast('Nghe điện thoại thông qua thiết bị âm thanh đã tắt');
     this.isLock = false;
+  }
+
+  back() {
+    this.navCtrl.setRoot(MenuPage);
   }
 }

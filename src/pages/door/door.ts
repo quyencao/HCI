@@ -1,33 +1,28 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Seat } from '../seat/seat';
-import { MenuPage } from "../menu/menu";
+import { Doors } from "../doors/doors";
 
 /**
- * Generated class for the Seats page.
+ * Generated class for the Door page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
 @IonicPage()
 @Component({
-  selector: 'page-seats',
-  templateUrl: 'seats.html',
+  selector: 'page-door',
+  templateUrl: 'door.html',
 })
-export class Seats {
+export class Door {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad Seats');
-  }
-
-  openPage() {
-    this.navCtrl.push(Seat);
+    console.log('ionViewDidLoad Door');
   }
 
   back() {
-    this.navCtrl.setRoot(MenuPage);
+    this.navCtrl.setRoot(Doors);
   }
 }

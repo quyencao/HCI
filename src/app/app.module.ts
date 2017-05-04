@@ -14,6 +14,10 @@ import { Lock } from '../pages/lock/lock';
 import { Phone } from '../pages/phone/phone';
 import { Seats } from '../pages/seats/seats';
 import { Seat } from '../pages/seat/seat';
+import { Doors } from '../pages/doors/doors';
+import { Door } from '../pages/door/door';
+import { Cameras } from '../pages/cameras/cameras';
+import { Camera } from '../pages/camera/camera';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -31,7 +35,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Lock,
     Phone,
     Seats,
-    Seat
+    Seat,
+    Doors,
+    Door,
+    Cameras,
+    Camera
   ],
   imports: [
     BrowserModule,
@@ -50,7 +58,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Lock,
     Phone,
     Seats,
-    Seat
+    Seat,
+    Doors,
+    Door,
+    Cameras,
+    Camera
   ],
   providers: [
     StatusBar,

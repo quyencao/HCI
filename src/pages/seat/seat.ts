@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
+import { Seats } from "../seats/seats";
 
 /**
  * Generated class for the Seat page.
@@ -54,5 +55,9 @@ export class Seat {
         position: 'bottom'
       });
       this.toast.present();
+  }
+
+  back() {
+    this.navCtrl.setRoot(Seats);
   }
 }

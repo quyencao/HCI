@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
+import { MenuPage } from "../menu/menu";
 
 /**
  * Generated class for the Sideviewmirror page.
@@ -45,5 +46,9 @@ export class Sideviewmirror {
        this.makeToast('Gương chiếu hậu đã được đóng');
        this.imgSrc = this.imgSrcs[0];
     }
+  }
+
+  back() {
+    this.navCtrl.setRoot(MenuPage);
   }
 }

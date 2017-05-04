@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
+import { MenuPage } from "../menu/menu";
 
 /**
  * Generated class for the Lock page.
@@ -48,5 +49,9 @@ export class Lock {
     this.imgSrc = this.imgSrcs[0];
     this.makeToast('Xe đã mở khóa');
     this.isLock = false;
+  }
+
+  back() {
+    this.navCtrl.setRoot(MenuPage);
   }
 }

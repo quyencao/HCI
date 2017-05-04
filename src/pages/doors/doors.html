@@ -1,5 +1,5 @@
 <!--
-  Generated template for the Seats page.
+  Generated template for the Doors page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
@@ -7,7 +7,7 @@
 <!--<ion-header>
 
   <ion-navbar>
-    <ion-title>seats</ion-title>
+    <ion-title>doors</ion-title>
   </ion-navbar>
 
 </ion-header>-->
@@ -15,14 +15,11 @@
 
 <ion-content padding style="position: relative;">
   <ion-row *ngFor="let number of [1,2]">
-    <ion-list-header>
-      Hàng {{ number }}
-    </ion-list-header>
     <ion-col *ngFor="let number of [0,1]" col-sm-6>
        <button ion-button color="light" outline style="padding: 40px;" (click)="openPage()">
-         <img src="assets/icon/seat.png"/>
+         <img src="assets/icon/car-door.png"/>
        </button>
     </ion-col>
   </ion-row>
-  <button ion-button color="dark" style="position: absolute; bottom: 5%; left: 3%;" (click)="back()">Back</button>
+  <button ion-button color="dark" style="position: absolute; bottom: 8%; left: 5%;" (click)="back()">Back</button>
 </ion-content>

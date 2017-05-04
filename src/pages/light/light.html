@@ -14,7 +14,7 @@
 
 
 
-<ion-content padding>
+<ion-content padding style="position: relative;">
  <div padding>
     <ion-segment [(ngModel)]="time">
       <ion-segment-button value="light" [disabled]="time === 'dark'">
@@ -38,4 +38,5 @@
       <button ion-button color="dark" large (click)="turnoff()">Tắt</button>
     </ion-col>
   </ion-row>
+  <button ion-button color="dark" style="position: absolute; bottom: 8%; left: 5%;" (click)="back()">Back</button>
 </ion-content>

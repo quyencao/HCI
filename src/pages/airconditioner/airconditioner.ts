@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
+import { MenuPage } from "../menu/menu";
 
 /**
  * Generated class for the Airconditioner page.
@@ -38,5 +39,9 @@ export class AirconditionerPage {
     } else {
        this.makeToast('Chức năng điều khiển điều hòa đã được tắt');
     }
+  }
+
+  back() {
+    this.navCtrl.setRoot(MenuPage);
   }
 }
