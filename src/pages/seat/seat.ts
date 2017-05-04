@@ -51,8 +51,8 @@ export class Seat {
   makeToast(message) {
       this.toast = this.toastCtrl.create({
         message,
-        duration: 1400,
-        position: 'bottom'
+        duration: 1500,
+        position: 'top'
       });
       this.toast.present();
   }

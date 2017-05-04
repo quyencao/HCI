@@ -20,7 +20,21 @@
     background-size: cover;
 }
 
+ion-grid {
+    margin-top: 50px;
+}
+
 * {
     box-sizing: content-box;
 }
+
+.toast-container {
+        height: 120px;
+        text-align: center;
+    }
+
+   .toast-container .toast-message {
+        font-size: 1.4em;
+    }
+
 // 7, 9

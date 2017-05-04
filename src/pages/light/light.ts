@@ -41,8 +41,8 @@ export class Light {
    makeToast(message) {
       this.toast = this.toastCtrl.create({
         message,
-        duration: 1200,
-        position: 'bottom'
+        duration: 1500,
+        position: 'top'
       });
       this.toast.present();
    }

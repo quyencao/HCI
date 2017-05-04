@@ -14,4 +14,16 @@ page-airconditioner {
     .scroll-content, ion-grid {
         padding-left: 0 !important;
     }
+
 }
+
+    .toast-container {
+        height: 120px;
+        text-align: center;
+    }
+
+   .toast-container .toast-message {
+        font-size: 1.2em;
+    }
+
+

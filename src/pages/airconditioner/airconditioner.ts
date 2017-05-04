@@ -27,8 +27,8 @@ export class AirconditionerPage {
   makeToast(message) {
       this.toast = this.toastCtrl.create({
         message,
-        duration: 900,
-        position: 'bottom'
+        duration: 1500,
+        position: 'top'
       });
       this.toast.present();
   }

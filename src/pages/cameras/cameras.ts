@@ -22,6 +22,7 @@ export class Cameras {
   }
 
   ionViewDidLoad() {
+    document.getElementById("frontCamera").style.transform = "rotateY(180deg)";
     this.makeToast('Hãy chọn camera trước hoặc sau');
   }
 
@@ -29,7 +30,7 @@ export class Cameras {
       this.toast = this.toastCtrl.create({
         message,
         duration: 1500,
-        position: 'bottom'
+        position: 'top'
       });
       this.toast.present();
   }

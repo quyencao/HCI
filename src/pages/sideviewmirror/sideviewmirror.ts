@@ -32,8 +32,8 @@ export class Sideviewmirror {
    makeToast(message) {
       this.toast = this.toastCtrl.create({
         message,
-        duration: 1000,
-        position: 'bottom'
+        duration: 1500,
+        position: 'top'
       });
       this.toast.present();
   }

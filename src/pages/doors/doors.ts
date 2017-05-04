@@ -29,7 +29,7 @@ export class Doors {
       this.toast = this.toastCtrl.create({
         message,
         duration: 1500,
-        position: 'bottom'
+        position: 'top'
       });
       this.toast.present();
   }
