@@ -15,7 +15,7 @@ import { Seats } from "../seats/seats";
 })
 export class Seat {
 
-  step: number = 30;
+  step: number = 10;
   totalDegree: number = 0;
   toast: any;
 
@@ -23,12 +23,11 @@ export class Seat {
   }
 
   ionViewDidLoad() {
-    this.rotate(0);
     console.log('ionViewDidLoad Seat');
   }
 
   rotate(degree) {
-    document.getElementById("seat").style.transform = "rotate(" + degree + "deg)";
+    document.getElementById("seatImage").style.transform = "rotate(" + degree + "deg)";
   }
 
   rotateRight() {
